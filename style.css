@@ -1,0 +1,138 @@
+/* Reset e corpo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #202124;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Cabeçalho */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  font-size: 14px;
+}
+
+.header a {
+  color: #202124;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.links-right {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon, .user-icon {
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+/* Corpo principal */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.google-logo {
+  width: 272px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+/* Barra de pesquisa */
+.search-container {
+  width: 100%;
+  max-width: 580px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  padding: 10px 15px;
+  background-color: #fff;
+  transition: box-shadow 0.2s ease;
+}
+
+.search-box:hover, .search-box:focus-within {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+.search-icon, .mic-icon {
+  font-size: 18px;
+  color: #9aa0a6;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+/* Botões */
+.buttons {
+  margin-top: 30px;
+}
+
+.buttons button {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-size: 14px;
+  margin: 5px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.buttons button:hover {
+  border: 1px solid #dadce0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Rodapé */
+.footer {
+  background: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 30px;
+  font-size: 14px;
+  border-top: 1px solid #dadce0;
+  flex-wrap: wrap;
+}
+
+.footer a {
+  color: #70757a;
+  text-decoration: none;
+  margin: 4px 12px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
